@@ -1,27 +1,48 @@
-# NgxToh
+# Tour of Heroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+[![Angular Style Guide][angular-style-guide-badge]][angular-style-guide-url]
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Node](https://nodejs.org/en/) >= 10.9.0
+- [Yarn](https://yarnpkg.com/lang/en/) >= 1.21.1
 
-## Code scaffolding
+## Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Install dependencies
 
-## Build
+```bash
+cd <ngx-toh>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+yarn install
+```
 
-## Running unit tests
+### Run server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+yarn start
+```
 
-## Running end-to-end tests
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Run tests
 
-## Further help
+```bash
+# Unit test
+yarn test
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# e2e test
+yarn run e2e
+```
+
+### Docker support
+
+```bash
+# Run server
+docker-compose up [--detech/-d]
+
+Visit http://localhost:4201/ in your browser.
+```
+
+[angular-style-guide-badge]: https://mgechev.github.io/angular2-style-guide/images/badge.svg
+[angular-style-guide-url]: https://angular.io/styleguide
